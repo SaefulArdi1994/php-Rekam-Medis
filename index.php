@@ -7,7 +7,8 @@
         <title>App Rumah Sakit</title>
     </head>
     <body>
-        <h1>Hello, world!</h1>
+        <h1>Hello, world!</h1> 
+        <a href="auth/login.php">Logout</a>
     </body>
 
     <script src="/js/bootstrap.min.js"></script>
