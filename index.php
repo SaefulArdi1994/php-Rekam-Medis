@@ -1,15 +1,12 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/css/bootstrap.min.css">
-        <title>App Rumah Sakit</title>
-    </head>
-    <body>
-        <h1>Hello, world!</h1> 
-        <a href="auth/login.php">Logout</a>
-    </body>
+<!-- koneksi -->
+<?php
+require_once "_config/config.php";
 
-    <script src="/js/bootstrap.min.js"></script>
-</html>
+// start session 
+if (isset($_SESSION['user'])) {
+    echo "<h1>Hello, world!</h1> <a href=\"auth/logout.php\">Logout</a>";
+} else {
+    echo "<script>window.location='".base_url('auth/login.php')."'</script>";
+}
+
+?>
