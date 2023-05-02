@@ -28,26 +28,30 @@ if (!isset($_SESSION['user'])) {
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" class="nav-link disabled">Data Pasien</a>
+                                <a class="nav-link" href="#">Rekam Medis</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="">Data Poli klimik</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Master Data</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Data Pasien</a></li>
+                                    <li><a class="dropdown-item" href="<?= base_url('obat/data.php') ?>">Data Obat</a></li>
+                                    <li><a class="dropdown-item" href="#">Data Dokter</a></li>
+                                    <li><a class="dropdown-item" href="#">Data Poli Klinik</a></li>
+                                </ul>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="">Data Obat</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="">Rekam Medis</a>
-                            </li>
-                            <li class="nav-link" class="nav-item">
-                                <a href="<?= base_url('auth/logout.php')?>">Log Out</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Setting</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                                    <li><a class="dropdown-item" href="<?= base_url('auth/logout.php')?>">Log Out</a></li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
             <script src="<?= base_url('_assets/jquery/jquery-3.6.4.min.js') ?>"></script>
-            <script src="<?= base_url('_assets/js/bootstrap.min.js') ?>"></script>
+            <script src="<?= base_url('_assets/js/bootstrap.bundle.min.js') ?>"></script>
         </body>
 
     <?php 
