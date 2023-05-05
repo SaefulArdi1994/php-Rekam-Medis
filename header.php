@@ -16,7 +16,7 @@ if (!isset($_SESSION['user'])) {
             <title>Aplikasi Rumah Sakit</title>
             <script src="https://unpkg.com/feather-icons"></script>
             <link href="<?= base_url() ?>/_assets/css/bootstrap.min.css" rel="stylesheet">
-        
+            <link rel="stylesheet" href="<?= base_url() ?>/_assets/bootstrap-icons-1.10.5/font/bootstrap-icons.min.css">
         </head>
         <body>
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
