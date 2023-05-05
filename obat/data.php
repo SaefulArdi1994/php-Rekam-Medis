@@ -5,7 +5,18 @@
         <h1>Obat</h1>
         <h4>
             <small>Data Obat</small>
+            <div class="pull-right">
+                <a href="" class="btn btn-success btn-x5">O</a>
+                <a href="" class="btn btn-success btn-x5">Tambah Data</a>
+            </div>
         </h4>
+        <div class="">
+            <form action="" class="form-inline" method="post">
+                <div class="form-group">
+                    <input type="text" name="pencarian" class="form-control" placeholder="Pencarian">
+                </div>
+            </form>
+        </div>
         <div class="table-responsive">
             <table class="table table-striped table-border table-hover">
                 <thead>

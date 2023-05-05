@@ -12,8 +12,11 @@ if (!isset($_SESSION['user'])) {
         <head>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
+           
             <title>Aplikasi Rumah Sakit</title>
+            <script src="https://unpkg.com/feather-icons"></script>
             <link href="<?= base_url() ?>/_assets/css/bootstrap.min.css" rel="stylesheet">
+        
         </head>
         <body>
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -52,6 +55,9 @@ if (!isset($_SESSION['user'])) {
             </nav>
             <script src="<?= base_url('_assets/jquery/jquery-3.6.4.min.js') ?>"></script>
             <script src="<?= base_url('_assets/js/bootstrap.bundle.min.js') ?>"></script>
+            <script>
+            feather.replace()
+            </script>
         </body>
 
     <?php 
