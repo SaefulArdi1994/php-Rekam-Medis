@@ -47,6 +47,7 @@
                             } else {
                                 $posisi = ($hal - 1) * $batas;
                             } 
+                            $no = 1;
                             if($_SERVER['REQUEST_METHOD'] == "POST") {
                                 $pencarian = trim(mysqli_real_escape_string($conn, $_POST['pencarian']));
                                 if($pencarian != '' ) {
@@ -64,8 +65,8 @@
                                 $no = $posisi + 1;
                             }
 
-                            $no = 1;
-                            $sql_obat = mysqli_query($conn, "SELECT * FROM obat") or die (mysqli_error($conn));
+                          
+                            $sql_obat = mysqli_query($conn, $query) or die (mysqli_error($conn));
                             if (mysqli_num_rows($sql_obat) > 0) {
                                 while($data = mysqli_fetch_array($sql_obat)) { ?> 
                                 <tr>
@@ -90,7 +91,7 @@
                     </table>
                 </div>
                 <?php
-                    if($_POST['pencarian'] == '') { ?>
+                    if(@$_POST['pencarian'] == '') { ?>
                         <div style="float:left;">
                             <?php
                             $jml = mysqli_num_rows(mysqli_query($conn, $queryJml));
