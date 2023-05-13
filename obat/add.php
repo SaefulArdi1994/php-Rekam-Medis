@@ -1,12 +1,23 @@
-<?php include_once ('../header.php') ?>
+<?php include_once ('../header.php') ;
+
+// use Ramsey\Uuid\Uuid;
+
+// $uuid = Uuid::uuid4();
+
+// printf(
+    //// "UUID: %s\nVersion: %d\n",
+    // $uuid->toString()
+    //// $uuid->getFields()->getVersion()
+// );
+?>
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 mb-3">
+            <div class="col-lg-4 mb-3">
                 <h1>Obat</h1>
                 <small>Data Obat</small>
             </div>
-            <div class="col-lg-12">
+            <div class="col-lg-4 mt-3">
                 <h4>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                         <a href="data.php" class="btn btn-warning btn-x5"><i class="bi bi-arrow-left"></i> Kembali </a>
@@ -30,6 +41,5 @@
             </div>
         </div>
     </div>
-
 
 <?php include_once ('../footer.php') ?>
