@@ -1,6 +1,7 @@
 <?php 
 
 require_once "_config/config.php";
+require "_assets/library/vendor/autoload.php";
 
 // start session 
 if (!isset($_SESSION['user'])) {

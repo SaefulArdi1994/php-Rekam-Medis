@@ -22,7 +22,7 @@
                 <h4>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                         <a href="" class="btn btn-success btn-x5"><i class="bi bi-arrow-clockwise"></i></a>
-                        <a href="" class="btn btn-success btn-x5"><i class="bi bi-plus-lg"></i> Tambah Data</a>
+                        <a href="add.php" class="btn btn-success btn-x5"><i class="bi bi-plus-lg"></i> Tambah Data</a>
                     </div>
                 </h4>
             </div>
