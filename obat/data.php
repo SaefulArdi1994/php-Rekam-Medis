@@ -21,7 +21,7 @@
             <div class="col-lg-8">
                 <h4>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <a href="" class="btn btn-success btn-x5"><i class="bi bi-arrow-clockwise"></i></a>
+                        <a href="edit.php" class="btn btn-success btn-x5"><i class="bi bi-arrow-clockwise"></i></a>
                         <a href="add.php" class="btn btn-success btn-x5"><i class="bi bi-plus-lg"></i> Tambah Data</a>
                     </div>
                 </h4>
@@ -74,7 +74,7 @@
                                     <td><?= $data['nama_obat']?></td>
                                     <td><?= $data['ket_obat']?></td>
                                     <td>
-                                        <a href=""><i class="bi bi-pencil-square"></i></a> | <a href=""><i class="bi bi-trash"></i></a>
+                                        <a href="edit.php?id=<?=$data['id_obat']?>"><i class="bi bi-pencil-square"></i></a> | <a href="delete.php?id=<?=$data['id_obat']?>"><i class="bi bi-trash"></i></a>
                                     </td>
                                 </tr>    
                                 <?php 

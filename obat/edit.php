@@ -1,15 +1,4 @@
-<?php include_once ('../header.php') ;
-
-// use Ramsey\Uuid\Uuid;
-
-// $uuid = Uuid::uuid4();
-
-// printf(
-    //// "UUID: %s\nVersion: %d\n",
-    // $uuid->toString()
-    //// $uuid->getFields()->getVersion()
-// );
-?>
+<?php include_once ('../header.php') ;?>
 
     <div class="container">
         <div class="row">
@@ -25,17 +14,23 @@
                 </h4>         
             </div>
             <div class="col-lg-8 col-lg-offset-3">
+                <?php 
+                    $id = @$_GET['id'];
+                    $sql_obat = mysqli_query($conn, "SELECT * FROM obat WHERE id_obat = '$id'") or die (mysqli_error($conn));
+                    $data = mysqli_fetch_array($sql_obat);
+                ?>
                 <form action="proses.php" method="post">
                     <div class="form-group">
-                        <label for="">Nama Obat</label>
-                        <input type="text" name="nama" id="nama" class="form-control" required>
+                        <label for="nama">Nama Obat</label>
+                        <input type="hidden" name="id" value="<?= $data['id_obat']?>">
+                        <input type="text" name="nama" id="nama"  class="form-control" value="<?=$data['nama_obat']?>" required autofocus>
                     </div>
                     <div class="form-group">
-                        <label for="">Keterangan</label>
-                        <textarea class="form-control" name="ket" id="ket" cols="130" rows="5"></textarea>
+                        <label for="ket">Keterangan</label>
+                        <textarea class="form-control" name="ket" id="ket" required><?=$data['ket_obat']?></textarea>
                     </div>
                     <div class="form-group mt-3">
-                        <button type="submit" name="add" value="simpan" class="btn btn-success">Simpan</button>
+                        <button type="submit" name="edit" value="Simpan" class="btn btn-success">Simpan</button>
                     </div>
                 </form>
             </div>
