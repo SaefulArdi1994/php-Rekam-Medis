@@ -64,8 +64,7 @@
                                 $queryJml = "SELECT * FROM obat";
                                 $no = $posisi + 1;
                             }
-
-                          
+                   
                             $sql_obat = mysqli_query($conn, $query) or die (mysqli_error($conn));
                             if (mysqli_num_rows($sql_obat) > 0) {
                                 while($data = mysqli_fetch_array($sql_obat)) { ?> 
