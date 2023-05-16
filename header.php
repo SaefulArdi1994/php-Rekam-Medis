@@ -40,7 +40,7 @@ if (!isset($_SESSION['user'])) {
                                     <li><a class="dropdown-item" href="#">Data Pasien</a></li>
                                     <li><a class="dropdown-item" href="<?= base_url('obat/data.php') ?>">Data Obat</a></li>
                                     <li><a class="dropdown-item" href="#">Data Dokter</a></li>
-                                    <li><a class="dropdown-item" href=""<?= base_url('obat/data.php') ?>"">Data Poli Klinik</a></li>
+                                    <li><a class="dropdown-item" href=""<?= base_url('obat/data.php') ?>"">Data PoliKlinik</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
