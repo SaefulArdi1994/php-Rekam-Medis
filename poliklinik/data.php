@@ -64,7 +64,7 @@
                             </table>
                         </div>
                     </form>
-                    <div class="box pull-right">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                         <button class="btn btn-warning btn-sm" onclick="edit()">Edit</button>
                         <button class="btn btn-danger btn-sm" onclick="hapus()">Hapus</button>
                     </div>
@@ -108,6 +108,7 @@
             }
         }
     </script>
+
 
 
 <?php include_once ('../footer.php') ?>
