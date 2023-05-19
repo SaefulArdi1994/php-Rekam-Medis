@@ -26,6 +26,7 @@
                                 for ($i=1; $i<=$_POST['count_add']; $i++) { ?>
                                     <tr>
                                         <td><?=$i?></td>
+                                        
                                         <td>
                                             <input type="text" name="nama-<?=$i?>" class="form-control" required>
                                         </td>
